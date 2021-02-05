@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(185, 185, 185, 0.678);
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#links {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#links li a:hover {
+    transition: text-shadow 200ms ease;
+    text-shadow: 0px 0px 6px #d3d3d3;
+    
+}
+
+#nav-logo {
+    display: block;
+    height: 35px;
+    width: 20px;
+    background-position: center;
+    margin-left: 3vw;
+    background-image: url('LumaLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#github-logo {
+    display: block;
+    margin-right: 3vw;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-image: url('github-logo-white.png');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#github-logo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 2px;
+    height:0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffffff62;
+    border-radius: 10px;
+    box-shadow: -2px -2px 7px rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#home-wave {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
